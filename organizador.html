@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <title>DApp - Organizadores</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+    <script src="js/utils.js"></script>
+</head>
+<body>
+    <h1>Painel do Organizador</h1>
+
+    <section>
+        <h2>1. Registrar Novo Evento</h2>
+        <input id="eventoNome" placeholder="Nome do Evento"/>
+        <input id="eventoData" placeholder="Data (timestamp)"/>
+        <input id="eventoCarga" placeholder="Carga Horária"/>
+        <button onclick="registrarEvento()">Registrar Evento</button>
+        <p>ID do Evento Registrado: <b id="eventoIdOut"></b></p>
+    </section>
+
+    <hr/>
+
+    <section>
+        <h2>2. Emitir Certificado</h2>
+        <input id="certIdEvento" placeholder="Cole o ID do Evento aqui"/>
+        <input id="certNomeAluno" placeholder="Nome do Aluno"/>
+        <input id="certMatricula" placeholder="Matrícula do Aluno"/>
+        <button onclick="emitirCertificado()">Emitir Certificado</button>
+         <p>ID do Certificado Emitido: <b id="certIdOut"></b></p>
+    </section>
+
+    <script src="js/organizador.js"></script>
+</body>
+</html>

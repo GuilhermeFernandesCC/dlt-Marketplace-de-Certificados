@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <title>DApp - Consulta</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+    <script src="js/utils.js"></script>
+</head>
+<body>
+    <h1>Consulta Pública de Autenticidade</h1>
+
+    <section>
+        <h2>Consultar Evento por ID</h2>
+        <input id="consultaIdEvento" placeholder="ID (hash) do Evento"/>
+        <button onclick="consultarEvento()">Consultar Evento</button>
+        <pre id="eventoOut"></pre>
+    </section>
+
+    <section>
+        <h2>Consultar Certificado por ID</h2>
+        <input id="consultaIdCert" placeholder="ID (hash) do Certificado"/>
+        <button onclick="consultarCertificado()">Consultar Certificado</button>
+        <pre id="certOut"></pre>
+    </section>
+
+    <script src="js/consulta.js"></script>
+</body>
+</html>
