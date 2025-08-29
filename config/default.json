@@ -1,0 +1,12 @@
+{
+  "network": {
+    "rpcUrl": "http://127.0.0.1:8545",
+    "chainId": 1337
+  },
+  "contracts": {
+    "AcadProof": {
+      "address": "0xSEU_ENDERECO_DO_CONTRATO_AQUI",
+      "abiFile": "config/AcadProof.json"
+    }
+  }
+}
